@@ -4,6 +4,7 @@
   },
   "scripts": {},
   "dependencies": {
-    "codegen": "^0.1.0"
+    "codegen": "^0.1.0",
+    "playwright": "^1.18.1"
   }
 }
