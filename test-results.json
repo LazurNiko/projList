@@ -1,0 +1,304 @@
+{
+  "config": {
+    "forbidOnly": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/mlazur/projList/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "name": "chromium",
+        "testDir": "/Users/mlazur/projList/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/?(*.)@(spec|test).*"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/mlazur/projList/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "name": "firefox",
+        "testDir": "/Users/mlazur/projList/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/?(*.)@(spec|test).*"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/mlazur/projList/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "name": "webkit",
+        "testDir": "/Users/mlazur/projList/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/?(*.)@(spec|test).*"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "rootDir": "/Users/mlazur/projList/tests",
+    "quiet": false,
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.18.1",
+    "workers": 5,
+    "webServer": null,
+    "__testGroupsCount": 3
+  },
+  "suites": [
+    {
+      "title": "clientsList.spec.js",
+      "file": "clientsList.spec.js",
+      "line": 0,
+      "column": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Clients grid",
+          "file": "clientsList.spec.js",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Clients list is exists",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "timedOut",
+                      "duration": 30006,
+                      "error": {
+                        "message": "Pending operations:\n  - page.goto at tests/clientsList.spec.js:7:16\n\npage.goto: Navigation failed because page was closed!\n=========================== logs ===========================\nnavigating to \"https://www.lohika.com/clients\", waiting until \"load\"\n============================================================",
+                        "stack": "Pending operations:\n  - page.goto at tests/clientsList.spec.js:7:16\n\npage.goto: Navigation failed because page was closed!\n=========================== logs ===========================\nnavigating to \"https://www.lohika.com/clients\", waiting until \"load\"\n============================================================\n    at /Users/mlazur/projList/tests/clientsList.spec.js:7:16"
+                      },
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "/Users/mlazur/projList/tests/clientsList.spec.js",
+                        "column": 16,
+                        "line": 7
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "file": "clientsList.spec.js",
+              "line": 6,
+              "column": 3
+            },
+            {
+              "title": "User can view information about client in grid by clicking it - client company page opens",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "status": "timedOut",
+                      "duration": 30008,
+                      "error": {
+                        "message": "Pending operations:\n  - page.goto at pages/aboutUs.js:157:21\n\npage.goto: Navigation failed because page was closed!\n=========================== logs ===========================\nnavigating to \"https://www.lohika.com/about-us\", waiting until \"load\"\n============================================================",
+                        "stack": "Pending operations:\n  - page.goto at pages/aboutUs.js:157:21\n\npage.goto: Navigation failed because page was closed!\n=========================== logs ===========================\nnavigating to \"https://www.lohika.com/about-us\", waiting until \"load\"\n============================================================\n    at clientsList.goVirtruLink (/Users/mlazur/projList/pages/aboutUs.js:157:21)\n    at /Users/mlazur/projList/tests/clientsList.spec.js:64:5"
+                      },
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "/Users/mlazur/projList/tests/clientsList.spec.js",
+                        "column": 5,
+                        "line": 64
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "file": "clientsList.spec.js",
+              "line": 30,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Clients grid",
+          "file": "clientsList.spec.js",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Clients list is exists",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 20085,
+                      "stdout": [
+                        {
+                          "text": "clients--->>>> {\n  Pinterest: \u001b[32m'https://www.pinterest.com/'\u001b[39m,\n  Adobe: \u001b[32m'https://www.adobe.com/'\u001b[39m,\n  Twilio: \u001b[32m'https://www.lohika.com/client-work/twilio'\u001b[39m,\n  Okta: \u001b[32m'https://www.lohika.com/client-work/okta'\u001b[39m,\n  Zendesk: \u001b[32m'https://www.zendesk.com/'\u001b[39m,\n  Asana: \u001b[32m'https://asana.com/'\u001b[39m,\n  PagerDuty: \u001b[32m'https://www.pagerduty.com/'\u001b[39m,\n  Rakuten: \u001b[32m'https://www.rakuten.com/'\u001b[39m,\n  \u001b[32m'Palo Alto Networks'\u001b[39m: \u001b[32m'https://www.paloaltonetworks.com/'\u001b[39m,\n  WPP: \u001b[32m'https://www.wpp.com/'\u001b[39m,\n  Activision: \u001b[32m'https://www.activision.com/'\u001b[39m,\n  Marqeta: \u001b[32m'https://www.marqeta.com/'\u001b[39m,\n  Alteryx: \u001b[32m'https://www.alteryx.com/'\u001b[39m,\n  \u001b[32m'Change Healthcare'\u001b[39m: \u001b[32m'https://www.changehealthcare.com/'\u001b[39m,\n  Checkout: \u001b[32m'https://www.checkout.com/'\u001b[39m,\n  GoDaddy: \u001b[32m'https://www.godaddy.com/'\u001b[39m,\n  Digicert: \u001b[32m'https://www.digicert.com/'\u001b[39m,\n  ibotta: \u001b[32m'https://home.ibotta.com/'\u001b[39m,\n  \u001b[32m'Forward Networks'\u001b[39m: \u001b[32m'https://www.lohika.com/client-work/forward-networks'\u001b[39m,\n  Petuum: \u001b[32m'https://www.lohika.com/client-work/petuum'\u001b[39m,\n  \u001b[32m'Philz Coffee'\u001b[39m: \u001b[32m'https://www.philzcoffee.com/'\u001b[39m,\n  Prysm: \u001b[32m'https://www.lohika.com/client-work/prysm'\u001b[39m,\n  Marketo: \u001b[32m'https://www.marketo.com/'\u001b[39m,\n  Virtru: \u001b[32m'https://www.lohika.com/client-work/virtru'\u001b[39m,\n  Coinbase: \u001b[32m'https://www.coinbase.com/'\u001b[39m,\n  Trane: \u001b[32m'https://www.lohika.com/client-work/trane'\u001b[39m,\n  \u001b[32m'Air Asia'\u001b[39m: \u001b[32m'https://www.airasia.com/'\u001b[39m,\n  Longview: \u001b[32m'https://www.longview.com/'\u001b[39m,\n  Microsoft: \u001b[32m'https://www.microsoft.com/'\u001b[39m,\n  Polycom: \u001b[32m'https://www.lohika.com/client-work/polycom'\u001b[39m,\n  BlueJeans: \u001b[32m'https://www.bluejeans.com/'\u001b[39m,\n  Novartis: \u001b[32m'https://www.novartis.com/'\u001b[39m,\n  Affirm: \u001b[32m'https://www.affirm.com/'\u001b[39m,\n  Clarizen: \u001b[32m'https://www.clarizen.com/'\u001b[39m,\n  Here: \u001b[32m'https://www.here.com/'\u001b[39m,\n  \u001b[32m'Collective Health'\u001b[39m: \u001b[32m'https://collectivehealth.com/'\u001b[39m,\n  Bond: \u001b[32m'https://www.bond.tech/'\u001b[39m,\n  Shogun: \u001b[32m'https://getshogun.com/'\u001b[39m,\n  Fauna: \u001b[32m'https://fauna.com/'\u001b[39m,\n  \u001b[32m'World Fuel Services'\u001b[39m: \u001b[32m'https://www.wfscorp.com/'\u001b[39m,\n  \u001b[32m'Berkshire Grey'\u001b[39m: \u001b[32m'https://www.berkshiregrey.com/'\u001b[39m,\n  \u001b[32m'Truckstop.com'\u001b[39m: \u001b[32m'https://truckstop.com/'\u001b[39m,\n  Wave: \u001b[32m'https://www.waveapps.com/'\u001b[39m,\n  Xendit: \u001b[32m'https://www.xendit.co/'\u001b[39m,\n  Bluecrew: \u001b[32m'https://www.bluecrewjobs.com/'\u001b[39m,\n  Accelaero: \u001b[32m'https://accelaero.com/'\u001b[39m,\n  Apixio: \u001b[32m'https://www.apixio.com/'\u001b[39m,\n  \u001b[32m'Audience Science'\u001b[39m: \u001b[32m'https://www.audiencescience.com/'\u001b[39m,\n  Periscope: \u001b[32m'https://www.periscope.com/'\u001b[39m,\n  Garrison: \u001b[32m'https://www.garrison.com/en'\u001b[39m,\n  \u001b[32m'Sauce Labs'\u001b[39m: \u001b[32m'https://saucelabs.com/'\u001b[39m,\n  Blameless: \u001b[32m'https://www.blameless.com/'\u001b[39m,\n  BigPay: \u001b[32m'https://www.bigpayme.com/'\u001b[39m,\n  RightFoot: \u001b[32m'https://www.rightfoot.org/'\u001b[39m,\n  \u001b[32m'98point6'\u001b[39m: \u001b[32m'https://www.lohika.com/client-work/98-point-6'\u001b[39m,\n  TradeIX: \u001b[32m'https://tradeix.com/'\u001b[39m,\n  UnBXD: \u001b[32m'https://unbxd.com/'\u001b[39m,\n  Setel: \u001b[32m'https://www.setel.my/'\u001b[39m,\n  Creator: \u001b[32m'http://creator.rest/'\u001b[39m,\n  Lookout: \u001b[32m'https://www.lookout.com/'\u001b[39m,\n  Earnin: \u001b[32m'https://www.earnin.com/'\u001b[39m,\n  Opower: \u001b[32m'https://www.oracle.com/'\u001b[39m,\n  eBay: \u001b[32m'https://www.ebay.com/'\u001b[39m,\n  Trimble: \u001b[32m'https://www.trimble.com/'\u001b[39m,\n  BuzzFeed: \u001b[32m'https://www.buzzfeed.com/'\u001b[39m,\n  Monster: \u001b[32m'https://www.monster.com/'\u001b[39m,\n  Sizmek: \u001b[32m'https://www.sizmek.com/'\u001b[39m,\n  Rubica: \u001b[32m'https://www.lohika.com/clients'\u001b[39m,\n  Even: \u001b[32m'https://even.com/'\u001b[39m,\n  \u001b[32m'Ingersoll Rand (Trane)'\u001b[39m: \u001b[32m'https://www.irco.com/'\u001b[39m,\n  UserMind: \u001b[32m'https://www.usermind.com/'\u001b[39m,\n  Gladly: \u001b[32m'https://www.gladly.com/'\u001b[39m,\n  DueDil: \u001b[32m'https://www.duedil.com/'\u001b[39m,\n  IFTTT: \u001b[32m'https://ifttt.com/'\u001b[39m,\n  Optimal: \u001b[32m'https://www.lohika.com/client-work/optimal-labs'\u001b[39m,\n  \u001b[32m'Veson Nautical'\u001b[39m: \u001b[32m'https://veson.com/'\u001b[39m,\n  ClearSlide: \u001b[32m'https://www.clearslide.com/'\u001b[39m,\n  Auryc: \u001b[32m'https://www.auryc.com/'\u001b[39m,\n  Cisco: \u001b[32m'https://www.cisco.com/'\u001b[39m,\n  Inspo: \u001b[32m'https://www.lohika.com/client-work/inspo-networks'\u001b[39m,\n  \u001b[32m'Hewlett Packard Enterprise'\u001b[39m: \u001b[32m'https://www.hpe.com/'\u001b[39m,\n  Smaato: \u001b[32m'https://www.smaato.com/'\u001b[39m,\n  \u001b[32m'Bellwether Coffee Co.'\u001b[39m: \u001b[32m'https://www.bellwethercoffee.com/'\u001b[39m,\n  MyHeritage: \u001b[32m'https://www.myheritage.com.ua/'\u001b[39m,\n  TenFold: \u001b[32m'https://www.tenfold.com/'\u001b[39m,\n  Stem: \u001b[32m'https://www.stem.com/'\u001b[39m,\n  Wire: \u001b[32m'https://wire.com/'\u001b[39m,\n  Openet: \u001b[32m'https://www.openet.com/'\u001b[39m,\n  \u001b[32m'Micro Focus'\u001b[39m: \u001b[32m'https://www.microfocus.com/'\u001b[39m,\n  Sonatype: \u001b[32m'https://www.sonatype.com/'\u001b[39m,\n  \u001b[32m'Open Publishing'\u001b[39m: \u001b[32m'https://openpublishing.com/en/'\u001b[39m,\n  \u001b[32m'Demon Ware'\u001b[39m: \u001b[32m'https://demonware.net/'\u001b[39m,\n  DataGrail: \u001b[32m'https://datagrail.io/'\u001b[39m,\n  HeadBox: \u001b[32m'https://www.headbox.com/'\u001b[39m,\n  VisionCritical: \u001b[32m'https://www.visioncritical.com/'\u001b[39m,\n  \u001b[32m'The Advisory Board Company'\u001b[39m: \u001b[32m'https://www.advisory.com/'\u001b[39m,\n  Tidemark: \u001b[32m'https://www.longview.com/'\u001b[39m,\n  JFrog: \u001b[32m'https://jfrog.com/'\u001b[39m,\n  Tile: \u001b[32m'https://www.thetileapp.com/'\u001b[39m,\n  Lattice: \u001b[32m'https://www.lattice-engines.com/'\u001b[39m,\n  \u001b[32m'Splice Machine'\u001b[39m: \u001b[32m'https://splicemachine.com/'\u001b[39m,\n  Asavie: \u001b[32m'https://www.asavie.com/'\u001b[39m,\n  Eurosport: \u001b[32m'https://www.eurosport.com/'\u001b[39m,\n  Skype: \u001b[32m'https://www.skype.com/'\u001b[39m,\n  Feedvisor: \u001b[32m'https://feedvisor.com/'\u001b[39m,\n  GoCanvas: \u001b[32m'https://www.gocanvas.com/'\u001b[39m,\n  \u001b[32m'Level 11'\u001b[39m: \u001b[32m'https://www.level11.com/'\u001b[39m,\n  \u001b[32m'Clever Devices'\u001b[39m: \u001b[32m'https://www.cleverdevices.com/'\u001b[39m,\n  \u001b[32m'January.ai'\u001b[39m: \u001b[32m'https://january.ai/'\u001b[39m,\n  Instart: \u001b[32m'https://www.lohika.com/clients'\u001b[39m,\n  \u001b[32m'CimCon Lighting'\u001b[39m: \u001b[32m'https://www.cimconlighting.com/'\u001b[39m,\n  GTL: \u001b[32m'http://www.gtl.net/'\u001b[39m,\n  Grapeshot: \u001b[32m'https://www.oracle.com/corporate/acquisitions/grapeshot/'\u001b[39m,\n  \u001b[32m'Go Euro (Omio)'\u001b[39m: \u001b[32m'https://www.omio.com/'\u001b[39m,\n  Blockspring: \u001b[32m'https://www.blockspring.com/'\u001b[39m,\n  Phone2Action: \u001b[32m'https://phone2action.com/'\u001b[39m,\n  \u001b[32m'Maven Machines'\u001b[39m: \u001b[32m'https://mavenmachines.com/'\u001b[39m,\n  \u001b[32m'Care.com'\u001b[39m: \u001b[32m'https://www.care.com/'\u001b[39m,\n  \u001b[32m'Science Exchange'\u001b[39m: \u001b[32m'https://www.scienceexchange.com/'\u001b[39m,\n  \u001b[32m'Rad.Ai'\u001b[39m: \u001b[32m'https://www.radai.com/'\u001b[39m,\n  Nursefly: \u001b[32m'https://www.nursefly.com/'\u001b[39m,\n  \u001b[32m'Verdant Services'\u001b[39m: \u001b[32m'https://www.verdantservices.com/'\u001b[39m,\n  Agari: \u001b[32m'https://www.agari.com/'\u001b[39m,\n  Seeq: \u001b[32m'https://www.seeq.com/'\u001b[39m,\n  \u001b[32m'Atomic Invest'\u001b[39m: \u001b[32m'https://www.atomicinvest.co/'\u001b[39m,\n  \u001b[32m'Butterfly Network'\u001b[39m: \u001b[32m'https://www.butterflynetwork.com/'\u001b[39m,\n  Eporta: \u001b[32m'https://www.eporta.com/'\u001b[39m,\n  \u001b[32m'Evolv Technology'\u001b[39m: \u001b[32m'https://evolvtechnology.com/'\u001b[39m,\n  \u001b[32m'Fabric inc'\u001b[39m: \u001b[32m'https://fabric.inc/'\u001b[39m,\n  Hadean: \u001b[32m'https://hadean.com/'\u001b[39m,\n  \u001b[32m'Happy money'\u001b[39m: \u001b[32m'https://happymoney.com/'\u001b[39m,\n  Sentient: \u001b[32m'https://www.sentient.ie/'\u001b[39m,\n  Google: \u001b[32m'https://www.google.com/'\u001b[39m,\n  Wolt: \u001b[32m'https://wolt.com/'\u001b[39m,\n  Ushur: \u001b[32m'https://ushur.com/'\u001b[39m,\n  Ohi: \u001b[32m'https://shipohi.com/'\u001b[39m,\n  Insticator: \u001b[32m'https://www.insticator.com/'\u001b[39m,\n  Cohesion: \u001b[32m'https://www.cohesionib.com/'\u001b[39m,\n  Rupeek: \u001b[32m'https://rupeek.com/'\u001b[39m\n}\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "clientsList.spec.js",
+              "line": 6,
+              "column": 3
+            },
+            {
+              "title": "User can view information about client in grid by clicking it - client company page opens",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 23087,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "clientsList.spec.js",
+              "line": 30,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Clients grid",
+          "file": "clientsList.spec.js",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Clients list is exists",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "status": "passed",
+                      "duration": 22568,
+                      "stdout": [
+                        {
+                          "text": "clients--->>>> {\n  Pinterest: \u001b[32m'https://www.pinterest.com/'\u001b[39m,\n  Adobe: \u001b[32m'https://www.adobe.com/'\u001b[39m,\n  Twilio: \u001b[32m'https://www.lohika.com/client-work/twilio'\u001b[39m,\n  Okta: \u001b[32m'https://www.lohika.com/client-work/okta'\u001b[39m,\n  Zendesk: \u001b[32m'https://www.zendesk.com/'\u001b[39m,\n  Asana: \u001b[32m'https://asana.com/'\u001b[39m,\n  PagerDuty: \u001b[32m'https://www.pagerduty.com/'\u001b[39m,\n  Rakuten: \u001b[32m'https://www.rakuten.com/'\u001b[39m,\n  \u001b[32m'Palo Alto Networks'\u001b[39m: \u001b[32m'https://www.paloaltonetworks.com/'\u001b[39m,\n  WPP: \u001b[32m'https://www.wpp.com/'\u001b[39m,\n  Activision: \u001b[32m'https://www.activision.com/'\u001b[39m,\n  Marqeta: \u001b[32m'https://www.marqeta.com/'\u001b[39m,\n  Alteryx: \u001b[32m'https://www.alteryx.com/'\u001b[39m,\n  \u001b[32m'Change Healthcare'\u001b[39m: \u001b[32m'https://www.changehealthcare.com/'\u001b[39m,\n  Checkout: \u001b[32m'https://www.checkout.com/'\u001b[39m,\n  GoDaddy: \u001b[32m'https://www.godaddy.com/'\u001b[39m,\n  Digicert: \u001b[32m'https://www.digicert.com/'\u001b[39m,\n  ibotta: \u001b[32m'https://home.ibotta.com/'\u001b[39m,\n  \u001b[32m'Forward Networks'\u001b[39m: \u001b[32m'https://www.lohika.com/client-work/forward-networks'\u001b[39m,\n  Petuum: \u001b[32m'https://www.lohika.com/client-work/petuum'\u001b[39m,\n  \u001b[32m'Philz Coffee'\u001b[39m: \u001b[32m'https://www.philzcoffee.com/'\u001b[39m,\n  Prysm: \u001b[32m'https://www.lohika.com/client-work/prysm'\u001b[39m,\n  Marketo: \u001b[32m'https://www.marketo.com/'\u001b[39m,\n  Virtru: \u001b[32m'https://www.lohika.com/client-work/virtru'\u001b[39m,\n  Coinbase: \u001b[32m'https://www.coinbase.com/'\u001b[39m,\n  Trane: \u001b[32m'https://www.lohika.com/client-work/trane'\u001b[39m,\n  \u001b[32m'Air Asia'\u001b[39m: \u001b[32m'https://www.airasia.com/'\u001b[39m,\n  Longview: \u001b[32m'https://www.longview.com/'\u001b[39m,\n  Microsoft: \u001b[32m'https://www.microsoft.com/'\u001b[39m,\n  Polycom: \u001b[32m'https://www.lohika.com/client-work/polycom'\u001b[39m,\n  BlueJeans: \u001b[32m'https://www.bluejeans.com/'\u001b[39m,\n  Novartis: \u001b[32m'https://www.novartis.com/'\u001b[39m,\n  Affirm: \u001b[32m'https://www.affirm.com/'\u001b[39m,\n  Clarizen: \u001b[32m'https://www.clarizen.com/'\u001b[39m,\n  Here: \u001b[32m'https://www.here.com/'\u001b[39m,\n  \u001b[32m'Collective Health'\u001b[39m: \u001b[32m'https://collectivehealth.com/'\u001b[39m,\n  Bond: \u001b[32m'https://www.bond.tech/'\u001b[39m,\n  Shogun: \u001b[32m'https://getshogun.com/'\u001b[39m,\n  Fauna: \u001b[32m'https://fauna.com/'\u001b[39m,\n  \u001b[32m'World Fuel Services'\u001b[39m: \u001b[32m'https://www.wfscorp.com/'\u001b[39m,\n  \u001b[32m'Berkshire Grey'\u001b[39m: \u001b[32m'https://www.berkshiregrey.com/'\u001b[39m,\n  \u001b[32m'Truckstop.com'\u001b[39m: \u001b[32m'https://truckstop.com/'\u001b[39m,\n  Wave: \u001b[32m'https://www.waveapps.com/'\u001b[39m,\n  Xendit: \u001b[32m'https://www.xendit.co/'\u001b[39m,\n  Bluecrew: \u001b[32m'https://www.bluecrewjobs.com/'\u001b[39m,\n  Accelaero: \u001b[32m'https://accelaero.com/'\u001b[39m,\n  Apixio: \u001b[32m'https://www.apixio.com/'\u001b[39m,\n  \u001b[32m'Audience Science'\u001b[39m: \u001b[32m'https://www.audiencescience.com/'\u001b[39m,\n  Periscope: \u001b[32m'https://www.periscope.com/'\u001b[39m,\n  Garrison: \u001b[32m'https://www.garrison.com/en'\u001b[39m,\n  \u001b[32m'Sauce Labs'\u001b[39m: \u001b[32m'https://saucelabs.com/'\u001b[39m,\n  Blameless: \u001b[32m'https://www.blameless.com/'\u001b[39m,\n  BigPay: \u001b[32m'https://www.bigpayme.com/'\u001b[39m,\n  RightFoot: \u001b[32m'https://www.rightfoot.org/'\u001b[39m,\n  \u001b[32m'98point6'\u001b[39m: \u001b[32m'https://www.lohika.com/client-work/98-point-6'\u001b[39m,\n  TradeIX: \u001b[32m'https://tradeix.com/'\u001b[39m,\n  UnBXD: \u001b[32m'https://unbxd.com/'\u001b[39m,\n  Setel: \u001b[32m'https://www.setel.my/'\u001b[39m,\n  Creator: \u001b[32m'http://creator.rest/'\u001b[39m,\n  Lookout: \u001b[32m'https://www.lookout.com/'\u001b[39m,\n  Earnin: \u001b[32m'https://www.earnin.com/'\u001b[39m,\n  Opower: \u001b[32m'https://www.oracle.com/'\u001b[39m,\n  eBay: \u001b[32m'https://www.ebay.com/'\u001b[39m,\n  Trimble: \u001b[32m'https://www.trimble.com/'\u001b[39m,\n  BuzzFeed: \u001b[32m'https://www.buzzfeed.com/'\u001b[39m,\n  Monster: \u001b[32m'https://www.monster.com/'\u001b[39m,\n  Sizmek: \u001b[32m'https://www.sizmek.com/'\u001b[39m,\n  Rubica: \u001b[32m'https://www.lohika.com/clients'\u001b[39m,\n  Even: \u001b[32m'https://even.com/'\u001b[39m,\n  \u001b[32m'Ingersoll Rand (Trane)'\u001b[39m: \u001b[32m'https://www.irco.com/'\u001b[39m,\n  UserMind: \u001b[32m'https://www.usermind.com/'\u001b[39m,\n  Gladly: \u001b[32m'https://www.gladly.com/'\u001b[39m,\n  DueDil: \u001b[32m'https://www.duedil.com/'\u001b[39m,\n  IFTTT: \u001b[32m'https://ifttt.com/'\u001b[39m,\n  Optimal: \u001b[32m'https://www.lohika.com/client-work/optimal-labs'\u001b[39m,\n  \u001b[32m'Veson Nautical'\u001b[39m: \u001b[32m'https://veson.com/'\u001b[39m,\n  ClearSlide: \u001b[32m'https://www.clearslide.com/'\u001b[39m,\n  Auryc: \u001b[32m'https://www.auryc.com/'\u001b[39m,\n  Cisco: \u001b[32m'https://www.cisco.com/'\u001b[39m,\n  Inspo: \u001b[32m'https://www.lohika.com/client-work/inspo-networks'\u001b[39m,\n  \u001b[32m'Hewlett Packard Enterprise'\u001b[39m: \u001b[32m'https://www.hpe.com/'\u001b[39m,\n  Smaato: \u001b[32m'https://www.smaato.com/'\u001b[39m,\n  \u001b[32m'Bellwether Coffee Co.'\u001b[39m: \u001b[32m'https://www.bellwethercoffee.com/'\u001b[39m,\n  MyHeritage: \u001b[32m'https://www.myheritage.com.ua/'\u001b[39m,\n  TenFold: \u001b[32m'https://www.tenfold.com/'\u001b[39m,\n  Stem: \u001b[32m'https://www.stem.com/'\u001b[39m,\n  Wire: \u001b[32m'https://wire.com/'\u001b[39m,\n  Openet: \u001b[32m'https://www.openet.com/'\u001b[39m,\n  \u001b[32m'Micro Focus'\u001b[39m: \u001b[32m'https://www.microfocus.com/'\u001b[39m,\n  Sonatype: \u001b[32m'https://www.sonatype.com/'\u001b[39m,\n  \u001b[32m'Open Publishing'\u001b[39m: \u001b[32m'https://openpublishing.com/en/'\u001b[39m,\n  \u001b[32m'Demon Ware'\u001b[39m: \u001b[32m'https://demonware.net/'\u001b[39m,\n  DataGrail: \u001b[32m'https://datagrail.io/'\u001b[39m,\n  HeadBox: \u001b[32m'https://www.headbox.com/'\u001b[39m,\n  VisionCritical: \u001b[32m'https://www.visioncritical.com/'\u001b[39m,\n  \u001b[32m'The Advisory Board Company'\u001b[39m: \u001b[32m'https://www.advisory.com/'\u001b[39m,\n  Tidemark: \u001b[32m'https://www.longview.com/'\u001b[39m,\n  JFrog: \u001b[32m'https://jfrog.com/'\u001b[39m,\n  Tile: \u001b[32m'https://www.thetileapp.com/'\u001b[39m,\n  Lattice: \u001b[32m'https://www.lattice-engines.com/'\u001b[39m,\n  \u001b[32m'Splice Machine'\u001b[39m: \u001b[32m'https://splicemachine.com/'\u001b[39m,\n  Asavie: \u001b[32m'https://www.asavie.com/'\u001b[39m,\n  Eurosport: \u001b[32m'https://www.eurosport.com/'\u001b[39m,\n  Skype: \u001b[32m'https://www.skype.com/'\u001b[39m,\n  Feedvisor: \u001b[32m'https://feedvisor.com/'\u001b[39m,\n  GoCanvas: \u001b[32m'https://www.gocanvas.com/'\u001b[39m,\n  \u001b[32m'Level 11'\u001b[39m: \u001b[32m'https://www.level11.com/'\u001b[39m,\n  \u001b[32m'Clever Devices'\u001b[39m: \u001b[32m'https://www.cleverdevices.com/'\u001b[39m,\n  \u001b[32m'January.ai'\u001b[39m: \u001b[32m'https://january.ai/'\u001b[39m,\n  Instart: \u001b[32m'https://www.lohika.com/clients'\u001b[39m,\n  \u001b[32m'CimCon Lighting'\u001b[39m: \u001b[32m'https://www.cimconlighting.com/'\u001b[39m,\n  GTL: \u001b[32m'http://www.gtl.net/'\u001b[39m,\n  Grapeshot: \u001b[32m'https://www.oracle.com/corporate/acquisitions/grapeshot/'\u001b[39m,\n  \u001b[32m'Go Euro (Omio)'\u001b[39m: \u001b[32m'https://www.omio.com/'\u001b[39m,\n  Blockspring: \u001b[32m'https://www.blockspring.com/'\u001b[39m,\n  Phone2Action: \u001b[32m'https://phone2action.com/'\u001b[39m,\n  \u001b[32m'Maven Machines'\u001b[39m: \u001b[32m'https://mavenmachines.com/'\u001b[39m,\n  \u001b[32m'Care.com'\u001b[39m: \u001b[32m'https://www.care.com/'\u001b[39m,\n  \u001b[32m'Science Exchange'\u001b[39m: \u001b[32m'https://www.scienceexchange.com/'\u001b[39m,\n  \u001b[32m'Rad.Ai'\u001b[39m: \u001b[32m'https://www.radai.com/'\u001b[39m,\n  Nursefly: \u001b[32m'https://www.nursefly.com/'\u001b[39m,\n  \u001b[32m'Verdant Services'\u001b[39m: \u001b[32m'https://www.verdantservices.com/'\u001b[39m,\n  Agari: \u001b[32m'https://www.agari.com/'\u001b[39m,\n  Seeq: \u001b[32m'https://www.seeq.com/'\u001b[39m,\n  \u001b[32m'Atomic Invest'\u001b[39m: \u001b[32m'https://www.atomicinvest.co/'\u001b[39m,\n  \u001b[32m'Butterfly Network'\u001b[39m: \u001b[32m'https://www.butterflynetwork.com/'\u001b[39m,\n  Eporta: \u001b[32m'https://www.eporta.com/'\u001b[39m,\n  \u001b[32m'Evolv Technology'\u001b[39m: \u001b[32m'https://evolvtechnology.com/'\u001b[39m,\n  \u001b[32m'Fabric inc'\u001b[39m: \u001b[32m'https://fabric.inc/'\u001b[39m,\n  Hadean: \u001b[32m'https://hadean.com/'\u001b[39m,\n  \u001b[32m'Happy money'\u001b[39m: \u001b[32m'https://happymoney.com/'\u001b[39m,\n  Sentient: \u001b[32m'https://www.sentient.ie/'\u001b[39m,\n  Google: \u001b[32m'https://www.google.com/'\u001b[39m,\n  Wolt: \u001b[32m'https://wolt.com/'\u001b[39m,\n  Ushur: \u001b[32m'https://ushur.com/'\u001b[39m,\n  Ohi: \u001b[32m'https://shipohi.com/'\u001b[39m,\n  Insticator: \u001b[32m'https://www.insticator.com/'\u001b[39m,\n  Cohesion: \u001b[32m'https://www.cohesionib.com/'\u001b[39m,\n  Rupeek: \u001b[32m'https://rupeek.com/'\u001b[39m\n}\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "clientsList.spec.js",
+              "line": 6,
+              "column": 3
+            },
+            {
+              "title": "User can view information about client in grid by clicking it - client company page opens",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "status": "passed",
+                      "duration": 24992,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "clientsList.spec.js",
+              "line": 30,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

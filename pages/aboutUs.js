@@ -66,7 +66,6 @@ exports.clientsList = class clientsList {
   }
 
   async goTwilioLink() {
-    this.page.waitForNavigation(/*{ url: 'https://www.lohika.com/about-us' }*/),
     await this.page.click('[href="https://www.lohika.com/client-work/twilio"]')
     await expect(this.page).toHaveURL('https://www.lohika.com/client-work/twilio');
     await this.page.goto('https://www.lohika.com/about-us');
