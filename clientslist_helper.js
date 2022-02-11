@@ -4,7 +4,6 @@ class Clientslist extends Helper {
 
   async getClientsList() {
     const { page } = this.helpers.Playwright;
-      await page.goto('https://www.lohika.com/clients')
   
       await page.waitForSelector('.all-clients__wrapper');
       const clients = await page.$eval('.all-clients__wrapper', 
