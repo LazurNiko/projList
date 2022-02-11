@@ -1,6 +1,10 @@
 Feature('Client list');
 
 Scenario('go to about-us page', ({ I }) => {
+  
+  I.amOnPage('https://www.lohika.com/clients')
+  I.getClientsList()
+
   I.amOnPage('/');
   I.see('About Us')
   I.click('a:has-text("About Us")')

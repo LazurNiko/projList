@@ -16,6 +16,9 @@ exports.config = {
       show: true,
       browser: 'chromium',
       waitForNavigation: "load",
+    },
+    Clientslist: {
+      require: "./clientslist_helper.js",
     }
   },
   include: {
