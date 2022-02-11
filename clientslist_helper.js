@@ -22,7 +22,7 @@ class Clientslist extends Helper {
             
           return Object.assign(...name.map((n, i) => ({ [n]: url[i] })));
         })
-      console.log('clients--->>>>', clients);
+      console.log('clients--->>>>', JSON.stringify(clients));
       await page.waitForTimeout(5000);
   }
 }
